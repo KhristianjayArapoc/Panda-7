@@ -1,0 +1,4 @@
+Sitemap: https://panda7.ca/sitemap.xml
+User-agent:
+Disallow: /*?
+Disallow: /faq/*

@@ -1,0 +1,171 @@
+.header {
+    height: 827px;
+}
+
+.backdrop .bleft {
+    position: relative;
+    background: url("/assets/common/img/home_hero_spring-left.svg") no-repeat !important;
+    background-position: left 93% !important;
+}
+
+.backdrop .bright {
+    position: relative;
+    background: url("/assets/common/img/home-hero-spring-right.svg") no-repeat !important;
+    background-position: 102% 100% !important;
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+    }
+    .backdrop .bright {
+        position: relative;
+        background-position: 102% 100%;
+        background-size: 300px !important;
+    }
+    .backdrop #birds svg{
+        width: 300PX;
+        height: auto;
+    }
+    .backdrop .swings,
+    .backdrop .sandcastle,
+    .backdrop .bleft .plant,
+    .backdrop .twobirds,
+    .backdrop .grass {
+        display: none;
+    }
+}
+
+.backdrop .line {
+    position: absolute;
+    bottom: -106px;
+    height: 172px;
+}
+
+.backdrop .linebg {
+    background: url(/assets/common/img/ground.png) no-repeat;
+    background-position: bottom center;
+    background-size: 125% 200%;
+    position: absolute;
+    bottom: -106px;
+    height: 172px;
+    width: 100%;
+    opacity: 28%;
+}
+
+.backdrop .linegrass {
+    background: url("/assets/common/img/hero-distant-grass.png") repeat-x;
+    background-position: bottom center;
+    background-size: 10%;
+    position: absolute;
+    bottom: 66px;
+    height: 40px;
+    width: 100%;
+    opacity: 10%;
+}
+
+.backdrop .swings {
+    position: absolute;
+    bottom: 22px;
+    left: 400px;
+    opacity: .8;
+}
+
+.backdrop .sandcastle {
+    position: absolute;
+    bottom: -3px;
+    left: 629px;
+    opacity: .9;
+}
+
+.backdrop .plant {
+    position: absolute;
+    width: 70px;
+    bottom: -58px;
+    left: 315px;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backdrop #plant {
+    position: absolute;
+    bottom: -57px;
+    right: 533px;
+    width: 30px;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backdrop #plant2 {
+    position: absolute;
+    bottom: -70px;
+    right: 159px;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backdrop .grass {
+    position: absolute;
+    width: 30px;
+    bottom: -30px;
+    left: 39px;
+}
+
+.backdrop #birds {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.backdrop .twobirds {
+    position: absolute;
+    bottom: -58px;
+    left: 500px;
+    opacity: 1;
+    width: 80px;
+}
+
+.backdrop #couple {
+    position: absolute;
+    bottom: -58px;
+    right: 316px;
+}
+
+.backdrop #fmly {
+    position: absolute;
+    bottom: 43px;
+    right: 557px;
+}
+
+.backdrop #cat {
+    position: absolute;
+    bottom: -58px;
+    right: 586px;
+}
+
+@media only screen and (max-width: 850px) {
+    .backdrop #couple {
+        width: 200px;
+        bottom: -58px;
+        right: 170px;
+    }
+    .backdrop #plant1,
+    .backdrop #plant2 {
+        display: none;
+    }
+}
+
+.backdrop .plant #butterfly {
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    transform: rotate(30deg);
+}
+
+@media only screen and (max-width: 425px){
+    .header {
+        height: 750px;
+    }
+}

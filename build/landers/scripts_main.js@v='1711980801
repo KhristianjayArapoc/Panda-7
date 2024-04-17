@@ -1,0 +1,38 @@
+window.onscroll = function() { scrollFunction() };
+var a = document.querySelector(".hamburger-menu");
+var m = document.querySelector(".hamburger");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.querySelector(".navstyle").style.borderBottom = "#e0e0e0 SOLID 1px";
+        document.querySelector(".navstyle").style.background = "#fff";
+        if (window.innerWidth > 1024) {
+            document.querySelector(".navstyle .navbar-brand").style.transform = "translate(-50%, 0px)";
+            document.querySelector(".navstyle .navbar-brand #logo").style.width = "130px";
+        }
+
+
+
+    } else {
+        document.querySelector(".navstyle").style.borderBottom = "none";
+        document.querySelector(".navstyle").style.background = "none";
+        if (window.innerWidth > 1024) {
+            document.querySelector(".navstyle .navbar-brand").style.transform = "translate(-50%, 65px)";
+            document.querySelector(".navstyle .navbar-brand #logo").style.width = "160px";
+        }
+    }
+
+}
+
+
+
+m.addEventListener("click", () => {
+    a.classList.toggle("change");
+
+});
+$(function() {
+    $('.scroll1').infiniteslide({
+        speed: 120
+    });
+
+});
